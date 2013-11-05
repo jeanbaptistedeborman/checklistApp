@@ -14,9 +14,8 @@ to {fill-opacity:1;}
 
 @-webkit-keyframes wipeFromBottom
 {
-0% {top:1000px; opacity:0; }
-80% {top:50px; opacity:0; }
-100%{top:0px; opacity:1;  }
+0% {top:1000px; }
+100%{top:0px;}
 }
 
 @-webkit-keyframes exitToTop
@@ -80,7 +79,7 @@ div {
 .active rect {
 	-webkit-animation:loopSvgFill 1s 1;
 	-webkit-animation-direction:alternate;
-		-webkit-animation-delay: 2s;
+		-Xwebkit-animation-delay: 2s;
 		fill-opacity:0; 
  
 	fill:white;
@@ -88,7 +87,7 @@ div {
 }
 .active:first-child rect {
 		-webkit-animation:loopSvgFill .3s 3; 
-	-webkit-animation-delay: 0s;
+	-Xwebkit-animation-delay: 0s;
 }
 
 
