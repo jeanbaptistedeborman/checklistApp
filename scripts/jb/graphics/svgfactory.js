@@ -37,7 +37,7 @@ var SVGFactory = {
 	/**
 	 * Generates a close button.
 	 * @param {object} params  an instance of the SVGFactory.Params object
-	 * @return {string} svg_str: An SVG-tag containing the SVG button.
+	 * @return {object} svg_obj: An SVG-tag containing the SVG button.
 	 */
 	getCloseButton : function(params) {"use strict";
 
@@ -63,7 +63,7 @@ var SVGFactory = {
 	/**
 	 * Generates an arrow-button pointing to the right. Can be flipped to left by setting params.flipV_bool to false;
 	 * @param {object} params  an instance of the SVGFactory.Params object
-	 * @return {string} svg_str: An SVG-tag containing the SVG buttons.
+	 * @return {object} svg_obj: An SVG-tag containing the SVG buttons.
 	 */
 	getArrowButton : function(params) {"use strict";
 		var width = Number(params.size[0]);
@@ -94,7 +94,7 @@ var SVGFactory = {
 	/**
 	 * Generates a circle
 	 * @param {object} params  an instance of the SVGFactory.Params object
-	 * @return {string} svg_str: An SVG-tag containing the SVG buttons.
+	 * @return {object} svg_obj: An SVG-tag containing the SVG buttons.
 	 */
 	getShape : function(params) {"use strict";
 		var width = Number(params.size[0]);

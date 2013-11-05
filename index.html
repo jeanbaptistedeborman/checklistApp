@@ -14,47 +14,122 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 
 		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/external/jquery-2.0.3.min.js"></script>
+		<script src="scripts/jb/devtools/utils.js"></script>
 		<script src="scripts/jb/application/checklistapp/application.js"></script>
 		<script src="scripts/jb/graphics/svgfactory.js"></script>
-		
-		
+
 		<link href ="css/checklistapp.css" rel='stylesheet' type='text/css'>
-		
-		
+
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		
-		
-		
+
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 	</head>
 
 	<body>
-			<div class='step'>
-			<div class='name'>Critère de discrimination</div>	
-			<div class='questionSet'>	
-			<div class='question'>Est-ce que l'un des critères suivants entre en jeu?</div>
-			<div data-result='race'  class='reponse'>La couleur de peau</div>
-			<div data-result='gender' class='reponse'>le sexe</div>
-			<div data-result='none' class='reponse'>aucun de ces critères</div>
+		<div class='step'>
+			<div class='name'>
+				<span>Caractéristique en cause</span>
 			</div>
-			
 			<div class='questionSet'>
-			<div class='question'>Est-ce que l'un des critères suivants entre en jeu? </div>
-			<div data-result='age' class='reponse'>L'âge'</div>
-			<div data-result='religion' class='reponse'>La religion</div>
-			<div data-result='none'  class='reponse'>aucun de ces critères</div>
+				<div class='question'>
+					Est-ce que l'un des critères suivants entre en jeu?
+				</div>
+				<div data-result='race'  class='response'>
+					La couleur de peau
+				</div>
+				<div data-result='gender' class='response'>
+					le sexe
+				</div>
+				<div data-result='none' class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+			<div class='questionSet'>
+				<div class='question'>
+					Est-ce que l'un des critères suivants entre en jeu?
+				</div>
+				<div data-result='age' class='response'>
+					L'âge'
+				</div>
+				<div data-result='religion' class='response'>
+					La religion
+				</div>
+				<div data-result='none'  class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+			<div class='questionSet'>
+				<div class='question'>
+					Est-ce que l'un des critères suivants entre en jeu?
+				</div>
+				<div data-result='age' class='response'>
+					L'âge'
+				</div>
+				<div data-result='none'  data-result='religion' class='response'>
+					La religion
+				</div>
+				<div class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+		</div> <!-- END OF STEP !--->
+		
+		<div class='step'>
+			<div class='name'>
+				<span>Caractéristique en cause</span>
 			</div>
-			
 			<div class='questionSet'>
-			<div class='question'>Est-ce que l'un des critères suivants entre en jeu? </div>
-			<div data-result='age' class='reponse'>L'âge'</div>
-			<div data-result='none'  data-result='religion' class='reponse'>La religion</div>
-			<div class='reponse'>aucun de ces critères</div>
-			</div>			
-				
-				
-			</div>	
+				<div class='question'>
+					Est-ce que l'un des critères suivants entre en jeu?
+				</div>
+				<div data-result='race'  class='response'>
+					La couleur de peau
+				</div>
+				<div data-result='gender' class='response'>
+					le sexe
+				</div>
+				<div data-result='none' class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+			<div class='questionSet'>
+				<div class='question'>
+					Est-ce que l'un des critères suivants entre en jeu?
+				</div>
+				<div data-result='age' class='response'>
+					L'âge'
+				</div>
+				<div data-result='religion' class='response'>
+					La religion
+				</div>
+				<div data-result='none'  class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+			<div class='questionSet'>
+				<div class='question'>
+					Est-ce que l'un des critères suivants entre en jeu?
+				</div>
+				<div data-result='age' class='response'>
+					L'âge'
+				</div>
+				<div data-result='none'  data-result='religion' class='response'>
+					La religion
+				</div>
+				<div class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+		</div> <!-- END OF STEP !--->
+		
+		
 	</body>
 </html>

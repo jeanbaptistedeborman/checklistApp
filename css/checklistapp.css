@@ -1,10 +1,154 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@-webkit-keyframes loop
+{
+from {opacity:.5; }
+to {opacity:1;}
+}
+
+@-webkit-keyframes loopSvgFill
+{
+from {fill-opacity:0;  }
+to {fill-opacity:1;}
+}
+
+@-webkit-keyframes wipeFromBottom
+{
+0% {top:1000px; opacity:0; }
+80% {top:50px; opacity:0; }
+100%{top:0px; opacity:1;  }
+}
+
+@-webkit-keyframes exitToTop
+{
+from {top:0px}
+to {top:1000px}
+}
+
+
+
+@-webkit-keyframes wipeFromTop
+{
+from {top:-50px;  }
+to {top:0px; }
+}
+
+
+
+
 body {
-	text-align: center; 
+	position:relative; 
+	text-align: center;
+	background-color: #00cccc;
+	font-family: 'Roboto', sans-serif;
+	color: #FFF;
+	width: 90%;
+}
+div { 
+
 
 }
-.progressPoint {
-		
-		
-		
-	}
+
+.name {
+		position:relative; 
+	-webkit-animation:wipeFromTop .5s; 
+	font-size: 30px;
+}
+.name span {
 	
+	
+
+	border-bottom: 2px solid #FFF;
+}
+#progressPointContainer {
+	-webkit-animation:wipeFromTop 2s; 
+	
+	margin:20px; 
+	
+}
+.progressPoint {
+	-webkit-animation:wipeFromTop 1s; 
+	
+	margin: 0px 10px 0px 10px; 
+}
+.progressPoint rect {
+	fill:none; 
+	stroke: white;
+	margin: 10px 10px 10px 10px;
+}
+
+.active rect {
+	-webkit-animation:loopSvgFill 1s 1;
+	-webkit-animation-direction:alternate;
+		-webkit-animation-delay: 2s;
+		fill-opacity:0; 
+ 
+	fill:white;
+	box-shadow: 5px 5px 10px #fff;  
+}
+.active:first-child rect {
+		-webkit-animation:loopSvgFill .3s 3; 
+	-webkit-animation-delay: 0s;
+}
+
+
+
+
+
+.notMet  rect {
+	-webkit-animation:loopSvgFill .2s 2; 
+	
+
+	fill: green;
+}
+
+.met rect {
+	-webkit-animation:loopSvgFill .2s 2; 
+
+	fill: red;
+}
+.div {
+	position:relative;
+
+
+}
+.questionSet () {
+	position:relative;
+	top:20px; 
+	
+	
+}
+.response, .question {
+	position:relative;
+	
+	-webkit-animation:wipeFromBottom 3s; 
+	 
+	border: 2px solid #fff;
+}
+.response {
+	background: #000;
+	-webkit-animation-duration:4.5s; 
+	color: #fff;
+	padding: 20px 10px 20px 10px;
+	cursor:pointer;  
+}
+
+.response:hover {
+	background:#333;  
+	Xcolor:black; 
+	
+	
+	
+	
+	
+}
+
+.question {
+	padding: 10px;
+	background-color:orange;
+	font-weight:400;  
+	color: #fff;
+	Xborder-color: #000; 
+}
+
+
