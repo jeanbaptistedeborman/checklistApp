@@ -81,8 +81,7 @@ div {
 .active rect {
 	-webkit-animation: loopSvgFill 1s 1;
 	-webkit-animation-direction: alternate;
-	-Xwebkit-animation-delay: 2s;
-	fill-opacity: 0;
+
 	fill: white;
 	box-shadow: 5px 5px 10px #fff;
 }
