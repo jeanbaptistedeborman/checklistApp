@@ -13,7 +13,6 @@
 
 		<meta name="viewport" content="width=600; initial-scale=1.0" />
 
-		
 		<script type="text/javascript" src="scripts/external/jquery-2.0.3.min.js"></script>
 		<script src="scripts/jb/devtools/utils.js"></script>
 		<script src="scripts/jb/application/checklistapp/application.js"></script>
@@ -28,9 +27,91 @@
 	</head>
 
 	<body>
+
+		<div id="intro">
+			<h1>Etes-vous en présence d'une discrimination?</h1>
+			<p>
+				- une méthode en 3 étapes -
+			</p>
+			<p>
+				Quelles questions vous poser pour savoir si vous êtes en présence d'une infraction à la loi sur l'égalité des chances?
+			</p>
+			<p>
+				Cette application vous done une méthode pour déterminer si vous êtes en présence d'une infraction civile ou pénale. En cas de doute, elle vous donnera accès à la documentation juridique pertinente pour répondre à chacune des questions qui se posent.
+			</p>
+			<span class = "button">Continuer</span>
+		</div>
+
 		<div class='step'>
 			<div class='name'>
-				<span>Caractéristique en cause</span>
+				<h2>Quel critère est en cause?</h2>
+			</div>
+			<div class='questionSet'>
+				<div class='question'>
+					Est-ce que l'une de ces caractéristiques de la personne est en cause ? 
+				</div>
+				<div data-result='race'  class='response'>
+					La couleur de peau
+				</div>
+				<div data-result='gender' class='response'>
+					le sexe
+				</div>
+				<div data-result='none' class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+			<div class='questionSet'>
+				<div class='question'>
+					Est-ce que l'une de ces caractéristiques de la personne est en cause ? 
+				</div>
+				<div data-result='age' class='response'>
+					L'âge'
+				</div>
+				<div data-result='religion' class='response'>
+					La religion
+				</div>
+				<div data-result='none'  class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+
+			<div class='questionSet'>
+				<div class='question'>
+					Est-ce que l'une de ces caractéristiques de la personne est en cause ? eu?
+				</div>
+				<div data-result='age' class='response'>
+					L'âge
+				</div>
+				<div ata-result='religion' class='response'>
+					La religion
+				</div>
+				<div data-result='none'  class='response'>
+					aucun de ces critères
+				</div>
+			</div><!-- END OF QUESTIONSET !--->
+			<div class='endScreen'>
+				<div class = "conditionNotMet">
+					<span class ='feedBack'>La situation n'implique pas un critère protégé par la loi.</span>
+					<div class='button back'>
+						Recommencer
+					</div>
+				</div>
+				<div class ="conditionMet">
+					<span class ='feedBack'>Attention. %result% est bien l'un des critères protégé par la loi. Il pourrait donc y avoir infraction. L'étape suivante: examiner le contexte de la situation.</span>
+					<div class='button next'>
+						Continuer
+					</div>
+				</div><!-- END OF END SCREEN !--->
+
+			</div>
+
+		</div>
+		<!-- END OF STEP !--->
+
+		<div class='step'>
+			<div class='name'>
+				<span>Le contexte</span>
 			</div>
 			<div class='questionSet'>
 				<div class='question'>
@@ -77,59 +158,8 @@
 				</div>
 			</div><!-- END OF QUESTIONSET !--->
 
-		</div> <!-- END OF STEP !--->
-		
-		<div class='step'>
-			<div class='name'>
-				<span>Caractéristique en cause</span>
-			</div>
-			<div class='questionSet'>
-				<div class='question'>
-					Est-ce que l'un des critères suivants entre en jeu?
-				</div>
-				<div data-result='race'  class='response'>
-					La couleur de peau
-				</div>
-				<div data-result='gender' class='response'>
-					le sexe
-				</div>
-				<div data-result='none' class='response'>
-					aucun de ces critères
-				</div>
-			</div><!-- END OF QUESTIONSET !--->
+		</div>
+		<!-- END OF STEP !--->
 
-			<div class='questionSet'>
-				<div class='question'>
-					Est-ce que l'un des critères suivants entre en jeu?
-				</div>
-				<div data-result='age' class='response'>
-					L'âge'
-				</div>
-				<div data-result='religion' class='response'>
-					La religion
-				</div>
-				<div data-result='none'  class='response'>
-					aucun de ces critères
-				</div>
-			</div><!-- END OF QUESTIONSET !--->
-
-			<div class='questionSet'>
-				<div class='question'>
-					Est-ce que l'un des critères suivants entre en jeu?
-				</div>
-				<div data-result='age' class='response'>
-					L'âge'
-				</div>
-				<div data-result='none'  data-result='religion' class='response'>
-					La religion
-				</div>
-				<div class='response'>
-					aucun de ces critères
-				</div>
-			</div><!-- END OF QUESTIONSET !--->
-
-		</div> <!-- END OF STEP !--->
-		
-		
 	</body>
 </html>

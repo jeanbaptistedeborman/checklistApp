@@ -1,5 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
 
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/*ANIMATIONS*/
 @-webkit-keyframes loop
 {
 from {
@@ -42,35 +44,86 @@ to {
 	top: 0px;
 }
 }
-
+/*CONTENT*/
 body {
 	position: relative;
 	text-align: center;
-	background-color: #00cccc;
+	background-color: #333;
+	font-weight:200;  
 	font-family: 'Roboto', sans-serif;
 	color: #FFF;
 	width: 90%;
 }
-div {
 
+h1 {
+
+	font-size:24px;
+	font-weight: 200;
+	
+	
+	
 }
+h2 {
+	font-size:22px;
+	display:inline;
+	font-weight: 200;   
+
+	
+	
+	
+}
+
+.div {
+	position: relative;
+}
+
+.conditionMet, .conditionNotMet {
+	-webkit-animation: wipeFromBottom .5s;
+	
+	
+	
+}
+
 
 .name {
 	position: relative;
 	-webkit-animation: wipeFromTop .5s;
-	font-size: 30px;
 }
-.name span {
+.name h2{
 
 	border-bottom: 2px solid #FFF;
 }
+
+/*PROGRESS BAR*/
+
 #progressPointContainer {
 	-webkit-animation: wipeFromTop .2s;
 	margin: 20px;
 }
 .progressPoint {
-	-webkit-animation: wipeFromTop 1s;
-	margin: 0px 10px 0px 10px;
+	position:relative; 
+
+	margin: 0px 50px 0px 10px;
+
+	text-align: center;
+	line-height: 30px;   
+	
+	
+}
+.progressPoint  span {
+	position:absolute; 
+	left:0; 
+	top:0; 
+	display: block; 
+	width:30px; 
+	height:30px;
+	line-height: 30px;  
+}
+.progressPoint svg {
+	position:absolute;
+	top:0; 
+	left:0;  
+	
 }
 .progressPoint rect {
 	fill: none;
@@ -79,29 +132,30 @@ div {
 }
 
 .active rect {
-	-webkit-animation: loopSvgFill 1s 1;
+	-webkit-animation: loopSvgFill .5s 3;
 	-webkit-animation-direction: alternate;
 
 	fill: white;
 	box-shadow: 5px 5px 10px #fff;
 }
-.active:first-child rect {
-	-webkit-animation: loopSvgFill .3s 3;
-	-Xwebkit-animation-delay: 0s;
+.active span {
+	color:black; 
+	
 }
 
-.notMet  rect {
+.conditionNotMet  rect {
 	-webkit-animation: loopSvgFill .2s 2;
 	fill: green;
 }
 
-.met rect {
+.conditionMet rect {
 	-webkit-animation: loopSvgFill .2s 2;
 	fill: red;
 }
-.div {
-	position: relative;
-}
+
+/*PROGRESS BAR*/
+
+
 .questionSet () {
 position:relative;
 top:20px;
@@ -110,25 +164,32 @@ top:20px;
 .response, .question {
 	position: relative;
 	-webkit-animation: wipeFromBottom .5s;
-	border: 2px solid #fff;
+	
 }
-.response {
+.button,  .response {
+	border: 2px solid #fff;
 	background: #000;
 	-webkit-animation-duration: .5s;
 	color: #fff;
 	padding: 20px 10px 20px 10px;
 	cursor: pointer;
 }
-
-.response:hover {
-	background: #333;
-	Xcolor: black;
+.button {
+	padding: 10px 10px 10px 10px;
+	margin: 40px 0px 0px 0px;
+	float:right;  
+	
+	
+	
+}
+.button:active, .response:active {
+	background:yellow; 
+	color: black;
 }
 
 .question {
 	padding: 10px;
-	background-color: orange;
-	font-weight: 400;
+	font-weight: 300;
 	color: #fff;
 	Xborder-color: #000;
 }
