@@ -81,6 +81,12 @@ var Application = {
 						if (++application.question_num >= application.questionsTotal_num) {
 
 							application.display_$.append(step_$.find(".endScreen .conditionNotMet"));
+							feedBack_$.parent().find ('.button').on ("click", function () {
+								
+							application.nextStep (); 
+							
+							
+						}); 
 						
 
 						} else {
@@ -130,7 +136,7 @@ var Application = {
 				var textSpan_$ = $("<span></span>");
 				textSpan_$.text(n + 1);
 
-				progressPoint_$.append(SVGFactory.getShape(circle_params));
+				//progressPoint_$.append(SVGFactory.getShape(circle_params));
 				progressPoint_$.append(textSpan_$);
 				progressPoint_$.addClass("progressPoint");
 				application.progressPointContainer_$.append(progressPoint_$);

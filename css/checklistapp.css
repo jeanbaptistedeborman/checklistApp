@@ -57,14 +57,14 @@ body {
 
 h1 {
 
-	font-size:24px;
+	font-size:28px;
 	font-weight: 200;
 	
 	
 	
 }
 h2 {
-	font-size:22px;
+	font-size:2px;
 	display:inline;
 	font-weight: 200;   
 
@@ -93,12 +93,18 @@ h2 {
 
 	border-bottom: 2px solid #FFF;
 }
+#intro  p{
+	
+	text-align:left; 
+	
+}
 
-/*PROGRESS BAR*/
+/*PROGRESS DOTS*/
 
 #progressPointContainer {
 	-webkit-animation: wipeFromTop .2s;
 	margin: 20px;
+	text-align:center; 
 }
 .progressPoint {
 	position:relative; 
