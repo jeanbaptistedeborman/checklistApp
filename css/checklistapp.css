@@ -64,9 +64,10 @@ h1 {
 	
 }
 h2 {
-	font-size:2px;
+
 	display:inline;
-	font-weight: 200;   
+	font-weight: 200;
+	font-size:24px;    
 
 	
 	
@@ -104,19 +105,16 @@ h2 {
 #progressPointContainer {
 	-webkit-animation: wipeFromTop .2s;
 	margin: 20px;
-	text-align:center; 
 }
 .progressPoint {
 	position:relative; 
-
 	margin: 0px 50px 0px 10px;
-
-	text-align: center;
 	line-height: 30px;   
 	
 	
 }
-.progressPoint  span {
+.progressPoint > span {
+	
 	position:absolute; 
 	left:0; 
 	top:0; 
@@ -162,7 +160,7 @@ h2 {
 /*PROGRESS BAR*/
 
 
-.questionSet () {
+.questionSet{
 position:relative;
 top:20px;
 
@@ -197,6 +195,5 @@ top:20px;
 	padding: 10px;
 	font-weight: 300;
 	color: #fff;
-	Xborder-color: #000;
 }
 
