@@ -45,6 +45,13 @@ to {
 }
 }
 /*CONTENT*/
+
+html {
+		background-color: #000;
+		 
+	
+	
+}
 body {
 	position: relative;
 	text-align: center;
@@ -52,13 +59,18 @@ body {
 	font-weight:200;  
 	font-family: 'Roboto', sans-serif;
 	color: #FFF;
-	width: 90%;
+	width: 500px;
+	height:600px;  
+	margin:0px auto 0px auto;
+	padding:20px 20px 20px 20px;
+	line-height: 160%;    
 }
 
 h1 {
 
-	font-size:28px;
+	font-size:24px;
 	font-weight: 200;
+	padding:10px; 
 	
 	
 	
@@ -67,7 +79,8 @@ h2 {
 
 	display:inline;
 	font-weight: 200;
-	font-size:24px;    
+	font-size:20px;
+	padding:20px;     
 
 	
 	
@@ -92,7 +105,7 @@ h2 {
 }
 .name h2{
 
-	border-bottom: 2px solid #FFF;
+	Xborder-bottom: 2px solid #FFF;
 }
 #intro  p{
 	
@@ -170,13 +183,26 @@ top:20px;
 	-webkit-animation: wipeFromBottom .5s;
 	
 }
-.button,  .response {
+.button,  .response, .result {
 	border: 2px solid #fff;
 	background: #000;
 	-webkit-animation-duration: .5s;
 	color: #fff;
-	padding: 20px 10px 20px 10px;
+	padding: 15px 32px 15px 32px;
 	cursor: pointer;
+	Xheight:40px; 
+}
+.penal {
+	
+	background:red;  
+	
+	
+}
+.civil {
+	
+	background:orange; 
+	
+	
 }
 .button {
 	padding: 10px 10px 10px 10px;
@@ -195,5 +221,43 @@ top:20px;
 	padding: 10px;
 	font-weight: 300;
 	color: #fff;
+}
+.wipeFromBottom {
+	position:relative; 
+-webkit-animation: wipeFromBottom .5s;
+	
+	
+}
+.moreInfo {
+	
+	position:absolute;
+		top:0px;
+			left:0px;
+			
+			display: inline;
+	width:50px;  
+
+	height:47px;  
+	padding:6px 3px 1px 3px;  
+	color:#000;
+	line-height 3px;  
+	font-size:14px; 
+	border:#000000;
+	font-weight = 800; 
+	Xborder-radius: 3px;
+	background-color:#666;
+	line-height: 13px; 
+	 
+
+	  
+	
+}
+.moreInfo:hover {
+	
+
+	background-color:yellow;  
+
+	  
+	
 }
 

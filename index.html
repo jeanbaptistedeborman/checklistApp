@@ -37,40 +37,47 @@
 				Quelles questions vous poser pour savoir si vous êtes en présence d'une infraction à la loi sur l'égalité des chances?
 			</p>
 			<p>
-				Cette application vous done une méthode pour déterminer si vous êtes en présence d'une infraction civile ou pénale. En cas de doute, elle vous donnera accès à la documentation juridique pertinente pour répondre à chacune des questions qui se posent.
+				Cette application vous done une méthode pour déterminer si vous êtes en présence d'une infraction civile ou pénale. En cas de doute, elle vous donnera accès à la documentation juridique pertinente pour les questions que vous vous posez.
 			</p>
 			<span class = "button">Continuer</span>
 		</div>
 
 		<div class='step'>
 			<div class='name'>
-				<h2>Quel critère est en cause?</h2>
+				<h2>Y a-t-il un critère protégé?</h2>
 			</div>
 			<div class='questionSet'>
 				<div class='question'>
-					Est-ce que l'une de ces caractéristiques de la personne est en cause ? 
+					Loi genre : est-ce que le critère en cause est
 				</div>
-				<div data-result='race'  class='response'>
-					La couleur de peau
-				</div>
-				<div data-result='gender' class='response'>
-					le sexe
+				<div data-result='gender'  class='response'>
+					Le sexe
 				</div>
 				<div data-result='none' class='response'>
-					aucun de ces critères
+					Un autre critère
 				</div>
 			</div><!-- END OF QUESTIONSET !--->
 
 			<div class='questionSet'>
 				<div class='question'>
-					Est-ce que l'une de ces caractéristiques de la personne est en cause ? 
+					Loi antiracisme. Est-ce que le critère en cause est: 
 				</div>
 				<div data-result='age' class='response'>
-					L'âge'
+					La nationalité
 				</div>
 				<div data-result='religion' class='response'>
-					La religion
+					La prétendue race
 				</div>
+				
+				<div data-result='religion' class='response'>
+					La couleur de peau
+				</div>
+				
+
+				
+				
+				
+				
 				<div data-result='none'  class='response'>
 					aucun de ces critères
 				</div>
@@ -78,27 +85,52 @@
 
 			<div class='questionSet'>
 				<div class='question'>
-					Est-ce que l'une de ces caractéristiques de la personne est en cause ? eu?
+					Loi antidiscrimination. La personne est discriminée en fonction de : 
+				</div>
+					<div data-result='age' class='response'>
+					L'age
 				</div>
 				<div data-result='age' class='response'>
-					L'âge
+					L'orientation sexuelle
 				</div>
-				<div ata-result='religion' class='response'>
-					La religion
+				<div data-result='religion' class='response'>
+					L'état civil
 				</div>
+				<div data-result='religion' class='response'>
+					La naissance
+				</div>
+				<!--
+				
+				<div data-result='religion' class='response'>
+					La fortune
+				</div>
+				<div data-result='religion' class='response'>
+					La conviction religieuse ou philosophique
+				</div>
+				<div data-result='religion' class='response'>
+					La conviction politique
+				</div>
+				<div data-result='religion' class='response'>
+					La langue
+				</div>
+				!--->
+			
+				
+				
+				
 				<div data-result='none'  class='response'>
 					aucun de ces critères
 				</div>
 			</div><!-- END OF QUESTIONSET !--->
 			<div class='endScreen'>
 				<div class = "conditionNotMet">
-					<span class ='feedBack'>La situation n'implique pas un critère protégé par la loi.</span>
+					<span class ='feedBack'>La situation n'implique pas de critère protégé par la loi.</span>
 					<div class='button back'>
 						Recommencer
 					</div>
 				</div>
 				<div class ="conditionMet">
-					<span class ='feedBack'>Attention. %result% est bien l'un des critères protégé par la loi. Il pourrait donc y avoir infraction. L'étape suivante: examiner le contexte de la situation.</span>
+					<span class ='feedBack'>Attention. %result% est bien l'un des critères protégé par la loi. Il pourrait donc y avoir infraction. Pour le savoir il faut examiner le contexte: la situation et le comportement en cause.</span>
 					<div class='button next'>
 						Continuer
 					</div>
@@ -111,52 +143,110 @@
 
 		<div class='step'>
 			<div class='name'>
-				<span>Le contexte</span>
+				<h2>Quelle est la situation ou le comportement en cause ?</h2>
 			</div>
 			<div class='questionSet'>
 				<div class='question'>
-					Est-ce que l'un des critères suivants entre en jeu?
+					Y a-t-il un traitement différent dans une même situation ? 
 				</div>
-				<div data-result='race'  class='response'>
-					La couleur de peau
+				<div data-result='nextQuestion'  class='response'>
+					de façon directe ou indirecte
 				</div>
-				<div data-result='gender' class='response'>
-					le sexe
+				<div data-result='nextQuestion' class='response'>
+					par injonction
 				</div>
 				<div data-result='none' class='response'>
-					aucun de ces critères
+					non
 				</div>
 			</div><!-- END OF QUESTIONSET !--->
 
 			<div class='questionSet'>
 				<div class='question'>
-					Est-ce que l'un des critères suivants entre en jeu?
+					Refuse-t-on un aménagement à une personne handicapée?
 				</div>
-				<div data-result='age' class='response'>
-					L'âge'
+				<div data-result='civil' class='response'>
+					La demande est raisonnable
 				</div>
-				<div data-result='religion' class='response'>
-					La religion
+				<div data-result='none' class='response'>
+					La demande est déraisonnable
 				</div>
-				<div data-result='none'  class='response'>
-					aucun de ces critères
-				</div>
+				
 			</div><!-- END OF QUESTIONSET !--->
 
 			<div class='questionSet'>
 				<div class='question'>
-					Est-ce que l'un des critères suivants entre en jeu?
+					Il y a harcèlement avéré
 				</div>
-				<div data-result='age' class='response'>
-					L'âge'
+				<div data-result='civil' class='response'>
+					Oui
 				</div>
 				<div data-result='none'  data-result='religion' class='response'>
-					La religion
+					Non
 				</div>
-				<div class='response'>
-					aucun de ces critères
-				</div>
+			
 			</div><!-- END OF QUESTIONSET !--->
+			
+				<div class='questionSet'>
+				<div class='question'>
+					Il y a infraction au code pénal et l'on peut prouver l'intention de l'auteur. 
+				</div>
+				<div data-result='penal' class='response'>
+					Oui
+				</div>
+				<div data-result='none'  data-result='religion' class='response'>
+					Non
+				</div>
+				
+				</div><!-- END OF QUESTIONSET !--->
+			
+				<div class='questionSet'>
+				<div class='question'>
+					Il y a incitation à la violence ou à la discrimination. L'on peut prouver l'intention de l'auteur et ce dernier donne publicité
+				</div>
+				<div data-result='penal' class='response'>
+					Oui
+				</div>
+				<div data-result='none'  data-result='religion' class='response'>
+					Non
+				</div>
+			
+			</div><!-- END OF QUESTIONSET !--->
+			
+			
+				<div class='questionSet'>
+				<div class='question'>
+					La situation met en jeu un critère racial et comporte
+				</div>
+				<div data-result='penal' class='response'>
+					... la diffusion d'idées sur la supériorité raciale
+				</div>
+				<div data-result='civil'  data-result='penal' class='response'>
+					... l'appartenance à un groupe qui prône<br>la discriminitaion ou la ségrégation
+				</div>
+				<div data-result='none'  data-result='religion' class='response'>
+					aucune de ces actions
+				</div>
+			
+			</div><!-- END OF QUESTIONSET !--->
+<div class='endScreen'>
+				<div class = "conditionNotMet">
+					<span class ='feedBack'>Les lois sur la discrimination ne s'appliquent pas dans ce cas</span>
+					<div class='button back'>
+						Recommencer
+					</div>
+				</div>
+				<div class ="conditionMet">
+					<span class ='feedBack'>
+							<div class='nextQuestion'>Question suivante</div>
+						<div class='penal'>L'auteur est passible de poursuite pénales</div>
+						<div class='civil'>L'auteur est passible de poursuite civiles</div>
+						
+					</span>	
+					<div class='button next'>
+						Continuer
+					</div>
+				</div>
+
 
 		</div>
 		<!-- END OF STEP !--->
