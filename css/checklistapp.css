@@ -1,5 +1,3 @@
-
-
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 /*ANIMATIONS*/
 @-webkit-keyframes loop
@@ -47,44 +45,34 @@ to {
 /*CONTENT*/
 
 html {
-		background-color: #000;
-		 
-	
-	
+	background-color: #000;
 }
 body {
 	position: relative;
 	text-align: center;
 	background-color: #333;
-	font-weight:200;  
+	font-weight: 200;
 	font-family: 'Roboto', sans-serif;
 	color: #FFF;
 	width: 500px;
-	height:600px;  
-	margin:0px auto 0px auto;
-	padding:20px 20px 20px 20px;
-	line-height: 160%;    
+	height: 600px;
+	margin: 0px auto 0px auto;
+	padding: 20px 20px 20px 20px;
+	line-height: 160%;
 }
 
 h1 {
 
-	font-size:24px;
+	font-size: 24px;
 	font-weight: 200;
-	padding:10px; 
-	
-	
-	
+	padding: 10px;
 }
 h2 {
 
-	display:inline;
+	display: inline;
 	font-weight: 200;
-	font-size:20px;
-	padding:20px;     
-
-	
-	
-	
+	font-size: 20px;
+	padding: 20px;
 }
 
 .div {
@@ -93,24 +81,19 @@ h2 {
 
 .conditionMet, .conditionNotMet {
 	-webkit-animation: wipeFromBottom .5s;
-	
-	
-	
 }
-
 
 .name {
 	position: relative;
 	-webkit-animation: wipeFromTop .5s;
 }
-.name h2{
+.name h2 {
 
 	Xborder-bottom: 2px solid #FFF;
 }
-#intro  p{
-	
-	text-align:left; 
-	
+#intro  p {
+
+	text-align: left;
 }
 
 /*PROGRESS DOTS*/
@@ -120,27 +103,27 @@ h2 {
 	margin: 20px;
 }
 .progressPoint {
-	position:relative; 
+	position: relative;
 	margin: 0px 50px 0px 10px;
-	line-height: 30px;   
-	
-	
-}
-.progressPoint > span {
-	
-	position:absolute; 
-	left:0; 
-	top:0; 
-	display: block; 
+	line-height: 30px;
 	width:30px; 
 	height:30px;
-	line-height: 30px;  
+	display: inline-block; 
+}
+.progressPoint > span {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
 }
 .progressPoint svg {
-	position:absolute;
-	top:0; 
-	left:0;  
-	
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .progressPoint rect {
 	fill: none;
@@ -151,13 +134,11 @@ h2 {
 .active rect {
 	-webkit-animation: loopSvgFill .5s 3;
 	-webkit-animation-direction: alternate;
-
 	fill: white;
 	box-shadow: 5px 5px 10px #fff;
 }
 .active span {
-	color:black; 
-	
+	color: black;
 }
 
 .conditionNotMet  rect {
@@ -172,48 +153,37 @@ h2 {
 
 /*PROGRESS BAR*/
 
-
-.questionSet{
-position:relative;
-top:20px;
-
+.questionSet {
+	position: relative;
+	top: 20px;
 }
 .response, .question {
 	position: relative;
 	-webkit-animation: wipeFromBottom .5s;
-	
 }
-.button,  .response, .result {
+.button, .response, .result {
 	border: 2px solid #fff;
 	background: #000;
 	-webkit-animation-duration: .5s;
 	color: #fff;
 	padding: 15px 32px 15px 32px;
 	cursor: pointer;
-	Xheight:40px; 
 }
 .penal {
-	
-	background:red;  
-	
-	
+
+	background: red;
 }
 .civil {
-	
-	background:orange; 
-	
-	
+
+	background: orange;
 }
 .button {
 	padding: 10px 10px 10px 10px;
 	margin: 40px 0px 0px 0px;
-	float:right;  
-	
-	
-	
+	float: right;
 }
 .button:active, .response:active {
-	background:yellow; 
+	background: yellow;
 	color: black;
 }
 
@@ -223,41 +193,27 @@ top:20px;
 	color: #fff;
 }
 .wipeFromBottom {
-	position:relative; 
--webkit-animation: wipeFromBottom .5s;
-	
-	
+	position: relative;
+	-webkit-animation: wipeFromBottom .5s;
 }
 .moreInfo {
-	
-	position:absolute;
-		top:0px;
-			left:0px;
-			
-			display: inline;
-	width:50px;  
 
-	height:47px;  
-	padding:6px 3px 1px 3px;  
-	color:#000;
-	line-height 3px;  
-	font-size:14px; 
-	border:#000000;
-	font-weight = 800; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: inline;
+	width: 50px;
+	height: 47px;
+	padding: 6px 3px 1px 3px;
+	color: #000;line-height 3px;
+	font-size: 14px;
+	border: #000000;font-weight = 800;
 	Xborder-radius: 3px;
-	background-color:#666;
-	line-height: 13px; 
-	 
-
-	  
-	
+	background-color: #666;
+	line-height: 13px;
 }
 .moreInfo:hover {
-	
 
-	background-color:yellow;  
-
-	  
-	
+	background-color: yellow;
 }
 

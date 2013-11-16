@@ -80,8 +80,7 @@ var Application = {
 				//trace(questionManager.lastAnswer_str + "   /   " + this.lastAnswer_str);
 
 				var timeout = setTimeout(function() {
-					trace(questionManager.lastAnswer_str + "   /   " + this.lastAnswer_str);
-
+			
 					if (!questionManager.conditionMet_bool) {
 
 						if (++application.question_num >= application.questionsTotal_num) {
@@ -148,10 +147,9 @@ var Application = {
 			application.questionsTotal_num = questions_$.length;
 
 			for ( n = 0; n < questions_$.length; n++) {
-				var progressPoint_$ = $("<span></span>");
 				var textSpan_$ = $("<span></span>");
+				var progressPoint_$ = $("<span></span>");
 				textSpan_$.text(n + 1);
-
 				progressPoint_$.append(SVGFactory.getShape(circle_params));
 				progressPoint_$.append(textSpan_$);
 				progressPoint_$.addClass("progressPoint");
