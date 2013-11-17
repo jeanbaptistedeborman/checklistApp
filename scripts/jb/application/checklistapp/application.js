@@ -205,7 +205,11 @@ var Application = {
 };
 
 $(document).ready(function() {"use strict";
+	alert (window.innerWidth);
+	alert (window.devicePixelRatio) 
+	
 	Application.init($('body'));
+	
 
 });
 
