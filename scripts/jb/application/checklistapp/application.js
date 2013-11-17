@@ -28,13 +28,16 @@ var Application = {
 
 			Application.display_$.append(question_$);
 			var responses_$ = question_$.find(".response");
+
+			/* content should go to HTML */
 			var moreInfo_$ = $("<div>en savoir plus</div>");
-			moreInfo_$.addClass ("moreInfo");  
-			
-			responses_$.append (moreInfo_$); 
+
+			moreInfo_$.addClass("moreInfo");
+
+			responses_$.prepend(moreInfo_$);
 			responses_$.on("click", function() {
 				var this_$ = $(this);
-				this_$.find (".moreInfo").remove ();
+				this_$.find(".moreInfo").remove();
 				context.conditionMet_bool = this_$.attr("data-result") !== 'none';
 				var currentProgressPoint_$ = $(".active");
 				currentProgressPoint_$.toggleClass("active");
@@ -80,7 +83,7 @@ var Application = {
 				//trace(questionManager.lastAnswer_str + "   /   " + this.lastAnswer_str);
 
 				var timeout = setTimeout(function() {
-			
+
 					if (!questionManager.conditionMet_bool) {
 
 						if (++application.question_num >= application.questionsTotal_num) {
@@ -98,19 +101,18 @@ var Application = {
 						}
 					} else {
 						/* temporary trash */
-						
+
 						trace("questionManager.lastResult_str : " + questionManager.lastResult_str)
 
 						var reponse_v2_$ = step_$.find(".endScreen .conditionMet").find("." + questionManager.lastResult_str);
 						trace("reponse_v2_$ :" + reponse_v2_$.length);
-						
-						
+
 						if (reponse_v2_$.length !== 0) {
 							step_$.find(".endScreen .conditionMet div").hide();
 							reponse_v2_$.show();
-							reponse_v2_$.addClass ("wipeFromBottom"); 
+							reponse_v2_$.addClass("wipeFromBottom");
 							application.display_$.append(step_$.find(".endScreen .conditionMet"));
-							
+
 							/* end temporary trash */
 
 						} else {
@@ -206,7 +208,6 @@ var Application = {
 
 $(document).ready(function() {"use strict";
 	Application.init($('body'));
-	
 
 });
 
