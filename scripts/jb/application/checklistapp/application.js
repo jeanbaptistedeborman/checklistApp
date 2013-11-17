@@ -205,11 +205,6 @@ var Application = {
 };
 
 $(document).ready(function() {"use strict";
-	alert (window.innerWidth);
-	alert (window.devicePixelRatio); 
-	document.getElementById("viewport").setAttribute("content", "initial-scale=2, minimum-scale=2,  maximum-scale=2"); 
-	alert ("2 : " + window.innerWidth);
-	alert (window.devicePixelRatio);
 	Application.init($('body'));
 	
 
