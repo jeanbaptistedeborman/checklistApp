@@ -12,5 +12,4 @@ version   = "1.0.0">
 	<author href="www.noloading.com" email="jb@noloading.com">Jean-Baptiste de Borman</author>
 	<preference name="EnableViewportScale" value="yes" />
 	<gap:platform name="android" />
-	<gap:platform name="symbian" />
 </widget>

@@ -206,8 +206,10 @@ var Application = {
 
 $(document).ready(function() {"use strict";
 	alert (window.innerWidth);
-	alert (window.devicePixelRatio) 
-	
+	alert (window.devicePixelRatio); 
+	document.getElementById("viewport").setAttribute("content", "initial-scale=4, maximum-scale=4, user-scalable=0"); 
+	alert ("2 : " + window.innerWidth);
+	alert (window.devicePixelRatio);
 	Application.init($('body'));
 	
 
