@@ -10,7 +10,7 @@ version   = "1.0.0">
 	<name>A checklist app -test</name>
 	<description></description>
 	<author href="www.noloading.com" email="jb@noloading.com">Jean-Baptiste de Borman</author>
-	<preference name="EnableViewportScale" value="YES" />
+	<preference name="EnableViewportScale" value="yes" />
 	<gap:platform name="android" />
 	<gap:platform name="symbian" />
 </widget>
